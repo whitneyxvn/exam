@@ -1,0 +1,92 @@
+/* cookie-recipe.css */
+
+:root {
+  --background: #fff8f0;
+  --text-color: #5a3e1b;
+  --accent-color: #c57b3a;
+  --soft-brown: #d9b382;
+  --border-radius: 12px;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --max-width: 700px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background: white;
+  max-width: var(--max-width);
+  width: 100%;
+  padding: 2rem 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 20px rgba(197,123,58,0.2);
+}
+
+h1 {
+  color: var(--accent-color);
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  color: var(--soft-brown);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.3rem;
+}
+
+ul, ol {
+  margin-left: 1.5rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 1.15rem;
+  margin-top: 1.2rem;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+/* Add some nice hover effect on lists (optional) */
+ul li:hover, ol li:hover {
+  color: var(--accent-color);
+  cursor: default;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  main {
+    padding: 1.5rem 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p, ul li, ol li {
+    font-size: 1rem;
+  }
+}
+
